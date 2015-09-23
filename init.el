@@ -36,6 +36,15 @@
       (getenv
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
+(message
+"       ____           _           _        _ _
+      |  _ \\ _ __ ___| |_   _  __| | ___  ( | )
+      | |_) | '__/ _ \\ | | | |/ _` |/ _ \\ |/|/
+ _ _  |  __/| | |  __/ | |_| | (_| |  __/
+( | ) |_|   |_|  \\___|_|\\__,_|\\__,_|\\___|
+|/|/
+")
+
 (message "Prelude is powering up... Be patient, Master %s!" current-user)
 
 (when (version< emacs-version "24.1")
